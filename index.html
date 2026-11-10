@@ -199,6 +199,13 @@ details.more[open] summary::before{content:"− "}
 .cert h3{font-size:15.5px;line-height:1.3}
 .cert p{font-size:13px;color:var(--muted)}
 .cert .lvl{font:500 10.5px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--v)}
+.badge-wall{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:48px}
+.bw{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;text-decoration:none;color:var(--muted);font-size:12.5px;line-height:1.35;padding:18px 12px;border:1px solid var(--line);border-radius:14px;background:var(--surface);backdrop-filter:blur(10px);transition:transform .25s,box-shadow .25s,border-color .25s}
+.bw img{width:110px;height:110px;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(69,212,255,.25));transition:transform .4s}
+.bw:hover{transform:translateY(-4px);border-color:rgba(69,212,255,.55);box-shadow:var(--glow);color:var(--ink)}
+.bw:hover img{transform:scale(1.08) rotate(-3deg)}
+@media (max-width:1000px){.badge-wall{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:620px){.badge-wall{grid-template-columns:repeat(2,1fr)}.bw img{width:88px;height:88px}}
 .v-mut{--v:var(--muted)}
 .prev{display:flex;flex-wrap:wrap;gap:8px}
 .prev span{font-size:13.5px;color:var(--muted);border:1px dashed var(--line);border-radius:8px;padding:8px 12px}
@@ -676,6 +683,18 @@ input,select,textarea{background:rgba(4,10,20,.6)}
       <p>25 certifications across Juniper, Fortinet, Cisco, Palo Alto, CompTIA and VMware, including expert-level JNCIE. Badges are verifiable on Credly.</p>
       <div><a class="btn btn-solid" href="https://www.credly.com/users/muhammad-qasim.6b336aa1" target="_blank" rel="noopener">Verify my badges on Credly</a></div>
     </div>
+    <div class="badge-wall" aria-label="Verified Credly badges">
+      <a class="bw" href="https://www.credly.com/badges/2503c189-8df1-4f66-89b0-bed8d305e904/public_url" target="_blank" rel="noopener" title="Verify JNCIE-ENT on Credly"><img src="https://images.credly.com/size/220x220/images/5da42eb3-af2b-44d6-90c7-3de135db7b8b/blob" alt="JNCIE-ENT badge" width="110" height="110" loading="lazy"><span>JNCIE-ENT</span></a>
+      <a class="bw" href="https://www.credly.com/badges/a436d962-1d2d-4cc4-b70b-fa99bca9b5a4/public_url" target="_blank" rel="noopener" title="Verify JNCIP-ENT on Credly"><img src="https://images.credly.com/size/220x220/images/305e0665-8e70-46d3-8398-ecb3726d9c6c/blob" alt="JNCIP-ENT badge" width="110" height="110" loading="lazy"><span>JNCIP-ENT</span></a>
+      <a class="bw" href="https://www.credly.com/badges/66fbf6e7-1608-4b37-a67f-3c90a196391e/public_url" target="_blank" rel="noopener" title="Verify JNCIS-ENT on Credly"><img src="https://images.credly.com/size/220x220/images/e7fc8f68-7883-4424-8523-f487b9f06184/blob" alt="JNCIS-ENT badge" width="110" height="110" loading="lazy"><span>JNCIS-ENT</span></a>
+      <a class="bw" href="https://www.credly.com/badges/a3af1375-26f9-4773-9f27-dc4752288adf/public_url" target="_blank" rel="noopener" title="Verify JNCIA-Junos on Credly"><img src="https://images.credly.com/size/220x220/images/a1b32a3b-e472-4f75-9898-e69435c132ea/blob" alt="JNCIA-Junos badge" width="110" height="110" loading="lazy"><span>JNCIA-Junos</span></a>
+      <a class="bw" href="https://www.credly.com/badges/9eff9c80-6f54-4e18-9287-1581e7833ed3/public_url" target="_blank" rel="noopener" title="Verify Fortinet FCSS Secure Networking on Credly"><img src="https://images.credly.com/size/220x220/images/f90d5d65-37b9-4354-a81f-38b969ea6f2e/blob" alt="Fortinet FCSS Secure Networking badge" width="110" height="110" loading="lazy"><span>Fortinet FCSS Secure Networking</span></a>
+      <a class="bw" href="https://www.credly.com/badges/5fd30222-106b-42ae-908d-97b9deb2730b/public_url" target="_blank" rel="noopener" title="Verify Fortinet NSE 7 Secure Networking on Credly"><img src="https://images.credly.com/size/220x220/images/78002279-deb4-4dea-9610-71ece769fb8e/blob" alt="Fortinet NSE 7 Secure Networking badge" width="110" height="110" loading="lazy"><span>Fortinet NSE 7 Secure Networking</span></a>
+      <a class="bw" href="https://www.credly.com/badges/8a0ed60a-6de9-44cd-91f9-86984d35720f/public_url" target="_blank" rel="noopener" title="Verify Fortinet NSE 6 Secure Networking on Credly"><img src="https://images.credly.com/size/220x220/images/f9429e70-1150-4cea-9e73-f0758b32624b/blob" alt="Fortinet NSE 6 Secure Networking badge" width="110" height="110" loading="lazy"><span>Fortinet NSE 6 Secure Networking</span></a>
+      <a class="bw" href="https://www.credly.com/badges/372060ed-761c-42dc-9a41-c0b37730f0cb/public_url" target="_blank" rel="noopener" title="Verify Fortinet Enterprise Firewall 7.6 Administrator on Credly"><img src="https://images.credly.com/size/220x220/images/c21c5f23-b167-45f6-8810-eb9e4d313707/blob" alt="Fortinet Enterprise Firewall 7.6 Administrator badge" width="110" height="110" loading="lazy"><span>Fortinet Enterprise Firewall 7.6 Administrator</span></a>
+      <a class="bw" href="https://www.credly.com/badges/aea77096-25a8-4c3a-a2c9-d71223636010/public_url" target="_blank" rel="noopener" title="Verify Fortinet Network Security 7.6 Support Engineer on Credly"><img src="https://images.credly.com/size/220x220/images/da069a66-1889-4b68-adb6-9b92de8c9191/blob" alt="Fortinet Network Security 7.6 Support Engineer badge" width="110" height="110" loading="lazy"><span>Fortinet Network Security 7.6 Support Engineer</span></a>
+      <a class="bw" href="https://www.credly.com/badges/e2f8cae8-36db-4393-a788-4d7255f928e8/public_url" target="_blank" rel="noopener" title="Verify CompTIA Security+ ce on Credly"><img src="https://images.credly.com/size/220x220/images/80d8a06a-c384-42bf-ad36-db81bce5adce/blob" alt="CompTIA Security+ ce badge" width="110" height="110" loading="lazy"><span>CompTIA Security+ ce</span></a>
+    </div>
     <div class="cert-groups">
       <div class="cg v-jn"><div class="cg-name"><i></i>Juniper</div><div class="cg-list">
         <div class="cert"><span class="lvl">Expert · active</span><h3>JNCIE-ENT</h3><p>Certified Expert, Enterprise Routing &amp; Switching · #702</p></div>
@@ -922,7 +941,7 @@ document.getElementById('hire').addEventListener('submit', function(e){
   document.querySelectorAll('[data-count]').forEach(function(el){ counted.observe(el); });
 
   /* Scroll reveal, staggered within each group */
-  var sel = '.sec-head,.svc,.engage div,.feature-grid>div,.badge,.code-card,.fabric div,.checks li,.diagram,.pills,.step,.ind,.job,.cg,.skills>div,.edu div,.recruit,.ch,form';
+  var sel = '.bw,.sec-head,.svc,.engage div,.feature-grid>div,.badge,.code-card,.fabric div,.checks li,.diagram,.pills,.step,.ind,.job,.cg,.skills>div,.edu div,.recruit,.ch,form';
   var els = document.querySelectorAll(sel), vh = window.innerHeight;
   document.documentElement.classList.add('js-reveal');
   var io = new IntersectionObserver(function(entries){
